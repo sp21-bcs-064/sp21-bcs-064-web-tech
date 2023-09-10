@@ -33,9 +33,8 @@
     color: black;
     font-family: handjet;
     font-size:40px;
-    margin-left:auto;
-    margin-right: auto;
-    position:relative;
+    margin-left:40%;
+    margin-right:40%;
 }
 
 .circle p
