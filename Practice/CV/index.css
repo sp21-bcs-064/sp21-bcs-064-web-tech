@@ -1,0 +1,20 @@
+.main {
+    color: blueviolet;
+    font-family: Handjet;
+    font-size: 120px;
+
+}
+
+.desc {
+    color: white;
+    font-family:handjet;
+    font-size: 40px;
+
+}
+
+.profile {
+    width: 200px;
+    border-radius: 50%;
+    float: right;
+    margin-right: 50px;
+}
