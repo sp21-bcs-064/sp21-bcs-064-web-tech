@@ -6,6 +6,8 @@
     color: blueviolet;
     font-family: Handjet;
     font-size: 120px;
+    margin-bottom: -30px;
+    margin-top:0px;
 
 }
 
@@ -13,6 +15,16 @@
     color: white;
     font-family:handjet;
     font-size: 40px;
+
+}
+
+
+.contact {
+    color: white;
+    font-family:handjet;
+    font-size: 20px;
+    float: right;
+    margin-right: 60px;
 
 }
 
@@ -42,4 +54,44 @@
     position: absolute;
     margin-left:40px;
     margin-top:70px;
+}
+
+.box
+{
+    border:3px solid blueviolet;
+    width:30%;
+    color:white;
+    text-align: center;
+    height:100px;
+    
+}
+
+.goal
+{
+    color:white;
+    font-size: 30px;
+    font-family: handjet;
+    text-align: center;
+
+
+}
+
+
+.expertise li
+{
+    color:white;
+    background-color:blueviolet;
+    margin-top:10px;
+    border-radius: 10px;
+    font-size:20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width:fit-content;
+}
+
+
+.education li
+{
+display: inline-block;
+margin-top:10px;
+border-radius: 10px;
 }
