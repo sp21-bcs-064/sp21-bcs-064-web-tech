@@ -79,7 +79,7 @@
 
 .expertise li
 {
-    color:white;
+    color:snow;
     background-color:blueviolet;
     margin-top:10px;
     border-radius: 10px;
@@ -91,7 +91,6 @@
 
 .education li
 {
-display: inline-block;
 margin-top:10px;
 border-radius: 10px;
 }
