@@ -2,7 +2,10 @@
 *
 {
     font-family: handjet;
+    color:white;
 }
+
+
 
 .left
 {
@@ -14,11 +17,11 @@
     align-items: center;
 }
 
-.top
+.right
 {
     width:75%;
     float:right;
-    border-left:2px solid snow;
+    border-left:2px solid white;
     padding-left: 20px;
 }
 .main {
@@ -79,6 +82,7 @@
     font-size:30px;
     display:flex;
     justify-content: space-between;
+    margin-right:50px;
 }
 
 
@@ -113,7 +117,7 @@
     border-radius: 10px;
     font-size:40px;
     font-family: handjet;
-    list-style-type:circle;
+    list-style-type:square;
 
 }
 
@@ -128,6 +132,34 @@
 #bars
 {
     margin-top:70px;
+    color:white;
+    font-size:30px;
+    margin-bottom:50px;
+}
+
+#progress
+{
+    font-family: handjet;
+    color:blueviolet;
+    font-size:50px;
+    border-bottom:2px solid blueviolet;
+}
+
+
+
+#interests
+{
+    list-style-type:circle;
+    font-size:30px;
+    display:inline;
+    
+}
+
+#interests li
+{
+    background-color: blueviolet;
+    border-radius:10px;
+    margin-bottom:15px;
 }
 
 
