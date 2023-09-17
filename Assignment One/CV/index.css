@@ -1,0 +1,130 @@
+
+*
+{
+    font-family: handjet;
+}
+
+.left
+{
+    margin-top:30px;
+    width:20%;
+    float:left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top
+{
+    width:75%;
+    float:right;
+    border-left:2px solid snow;
+    padding-left: 20px;
+}
+.main {
+    color: blueviolet;
+    font-family: Handjet;
+    font-size: 120px;
+    margin-bottom: -30px;
+    margin-top:0px;
+
+}
+
+.desc {
+    color: white;
+    font-family:handjet;
+    font-size: 40px;
+
+}
+
+
+.contact {
+    color: white;
+    font-family:handjet;
+    font-size: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.profile {
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.circle
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    border-radius: 50%;
+    height:200px;
+    width:200px;
+    text-align: center;
+    color: black;
+    font-family: handjet;
+    font-size:40px;
+    margin-left:45%;
+    margin-right:45%;
+}
+
+.education
+{
+    margin-top:30px;
+    color:white;
+    font-family:handjet;
+    font-size:30px;
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.education p{
+    color:blueviolet;
+    font-size:50px;
+    border-bottom: 2px solid blueviolet;
+    display:inline;
+}
+
+.education ul
+{
+    list-style-type: none;
+}
+
+
+.goal
+{
+    color:white;
+    font-size: 30px;
+    font-family: handjet;
+    text-align: center;
+
+
+}
+
+
+.expertise li
+{
+    color:snow;
+    margin-top:10px;
+    border-radius: 10px;
+    font-size:40px;
+    font-family: handjet;
+    list-style-type:circle;
+
+}
+
+#experience
+{
+    color:white;
+    font-size:30px;
+}
+
+
+
+
+
+

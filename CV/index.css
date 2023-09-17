@@ -1,0 +1,28 @@
+
+#intro-side
+{
+    display: flex;
+    flex-direction: column;
+    width:35%;
+    background-color: rgb(0, 0, 128);
+    float:left;
+    padding-top: 20px;
+}
+
+#content-side
+{
+    display: flex;
+    flex-direction: column;
+    width:65%;
+    background-color: white;
+    float:right;
+}
+
+#profile-picture
+{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    align-self: center;
+
+}
