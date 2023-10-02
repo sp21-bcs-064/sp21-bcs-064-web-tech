@@ -1,0 +1,60 @@
+body
+{
+    background-color:blueviolet;
+}
+
+
+#sign-up
+{
+    margin-left:40%;
+}
+
+#pass
+{
+    height:25px;
+    margin-left:53px;
+    margin-bottom:5px;
+}
+
+#mail
+{
+    height:25px;
+    margin-left:21px;
+    margin-bottom:10px;
+}
+
+#first
+{
+    margin-bottom:10px;
+    height:25px;
+    margin-left:42px;
+}
+
+#last
+{
+    margin-bottom:10px;
+    height:25px;
+    margin-left:44px;
+}
+
+#title
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:yellowgreen;
+    margin-left:40%;
+}
+
+
+#submit
+{
+    height:40px;
+    width:100px;
+    background-color: white;
+    border-color: seagreen;
+    border-radius:3px;
+    margin-top:40px;
+    color:greenyellow;
+    width:300px;
+
+
+}

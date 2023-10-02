@@ -8,6 +8,12 @@ $('#sign-up').validate({
       required: true,
       minlength: 8,
     },
+    first: {
+      required: true,
+    },
+    last: {
+      required: true,
+    },
   },
   messages: {
     mail: {
@@ -17,6 +23,12 @@ $('#sign-up').validate({
     pass: {
       required: 'Please enter your password',
       minlength: 'Please enter at least 8 characters',
+    },
+    first: {
+      required: 'Please enter first name',
+    },
+    last: {
+      required: 'Please enter last name',
     },
   },
 });
