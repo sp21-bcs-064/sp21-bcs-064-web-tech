@@ -1,0 +1,108 @@
+#pizza-logo
+{
+    height:40px;
+    margin-right:7px;
+    margin-bottom:5px;
+}
+
+.nav-link
+{
+    color:black;
+
+}
+
+.title
+{
+    color:black;
+}
+
+.home
+{
+    background-color:lightgray;
+}
+
+.blogs
+{
+    margin-top:70px;
+    background-image: url(../pictures/blog-ramen.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    
+}
+
+
+@media screen and (min-width: 900px) and (max-width:1200px)
+{
+    .blogs
+    {
+    background-image: url(../pictures/sashimi.jpg);
+    background-size:cover;
+    background-position: right;
+    height:400px;
+    }
+
+    .title
+    {
+        font-size: 70px;
+        color:lightblue;
+    }
+    
+}
+
+
+
+
+@media screen and (min-width: 1200px)
+{
+    .blogs
+    {
+    background-image: url(../pictures/sashimi.jpg);
+    background-size:auto;
+    background-position:right;
+    height:400px;
+    }
+
+    .title
+    {
+        font-size: 80px;
+    }
+    
+}
+
+
+
+@media screen and (min-width:300px) and (max-width:480px)
+{
+    .blogs
+    {
+    background-image: url(pictures/ramen-phone.avif);
+    background-size:contain;
+    background-position:right;
+    height:400px;
+    }
+
+
+    
+    .title
+    {
+        font-size: 30px;
+        color:white;
+        margin-left: 20px;
+        margin-bottom: 5px;
+        position:absolute;
+    }
+}
+
+
+.cardpic
+{
+    background-size: contain;
+}
+
+
+.svgs
+{
+    height:35px;
+    margin-right:20px;
+}

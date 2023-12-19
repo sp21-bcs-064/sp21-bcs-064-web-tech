@@ -1,0 +1,41 @@
+
+
+<% if (fooditems.length==0) { %>
+    <p>No foods to list</p>
+   <% } else { %>
+     <div class="album py-5 bg-body-tertiary">
+       <div class="container">
+         <h2 class="pb-2 border-bottom">Menu Items</h2>
+   
+         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+           <% for( let index = 0; index < fooditems.length; index++ ) { %>
+           <div class="col">
+             <div class="card shadow-sm">
+               <img src="/pictures/katsu.jpeg" >
+               <div class="card-body">
+                 <h2><%= fooditems[index].name %></h2>
+                 <p class="card-text"><%= fooditems[index].price %> Rs</p>
+                 <div class="d-flex justify-content-between align-items-center">
+                   <div class="btn-group">
+                    <a href="/api/foods/delete/<%=fooditems[index]._id %>">
+                     <button type="button" class="btn btn-sm btn-outline-secondary">
+                       Delete</button>
+                       <a href="/editfood">
+                         <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </a>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <% } %>
+   <% } %>
+   
+   <nav aria-label="Page navigation example">
+       <ul class="pagination">
+           <% for( let index = 1; index <= totalPages; index++ ) { %>
+               <li class="page-item"><a class="page-link" href="/products/<%= index %>"><%= index %></a></li>
+             <% } %>
+       </ul>
+     </nav>
+   
