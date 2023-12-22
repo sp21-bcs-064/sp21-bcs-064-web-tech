@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+
+<div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-primary blogs">
+    <div class="col-lg-6 px-0">
+      <h1 class="display-4 fst-italic title">Something to be <br>ramenbered.</h1>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+      <h2 class="pb-2 border-bottom">Menu Items</h2>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <% for( let index = 0; index < fooditems.length; index++ ) { %>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/pictures/katsu.jpeg" >
+            <div class="card-body">
+              <h2><%= fooditems[index].name %></h2>
+              <p class="card-text"><%= fooditems[index].price %></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View Details</button>
+                  <a href="/add-cart/<%=fooditems[index]._id %>">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add to Order</button>
+                 </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% } %>
+
+        
+        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container px-4 py-5" id="icon-grid">
+    <h2 class="pb-2 border-bottom">We Provide</h2>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+      <div class="col d-flex align-items-start">
+        <img src="pictures/egg-fried.svg" class="svgs">
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Comfy Food</h3>
+          <p>Our food is exquisite and made with fresh and quality ingredients by our fine chefs.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <img src="pictures/moon-stars-fill.svg" class="svgs">
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Great Ambience</h3>
+          <p>From the sliding doors to the glass interior, it feels very pleasing</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <img src="pictures/emoji-wink-fill.svg" class="svgs">
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Quality Service</h3>
+          <p>Our Staff is here to provide you with speedy delivery and great quality.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <img src="pictures/heart-half.svg" class="svgs">
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Feels like home</h3>
+          <p>Fine dining yet somewhere you can chill out with your friends.</p>
+        </div>
+      </div>
+     
+  
+    </div>
+  </div>
+  
+
+  <div class="b-example-divider"></div>
+  
+      <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Socials</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Instagram</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Facebook</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Whatsapp</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Contact</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Owner</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Helpline</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Fax</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Partners</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Novu</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Shangai</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Kim Mun Chinese</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form action="" method="post">
+                <h5>Give us your feedback</h5>
+                <p>Your reviews are valuable for us to improve.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Enter your Review</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Write your review here" name="review">
+                  <button class="btn btn-dark" type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2023 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+
+      
+</body>
+</html>
