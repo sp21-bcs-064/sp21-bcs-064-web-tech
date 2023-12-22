@@ -1,0 +1,49 @@
+<div class="container">
+    <form action="" method="post">
+        
+        <div class="mb-3">
+            <label for="email" class="form-label">Operand 1</label>
+            <input type="number" id="prod" class="form-control" name="op1" />
+        </div>
+        <div class="mb-3">
+        <label for="exampleDropdown">Operator</label>
+    <select class="custom-select" id="exampleDropdown" name="op">
+        <option value="option1">+</option>
+        <option value="option2">-</option>
+        <option value="option3">x</option>
+        <option value="option4">/</option>
+    </select>
+</div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Operand 2</label>
+            <input type="number" id="price" class="form-control" name="op2" />
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-info" type="submit">Calculate</button>
+        </div>
+    </form>
+</div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Operand1</th>
+                    <th>Operator</th>
+                    <th>Operand2</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% if(myArr) {%>
+                <% for(var i=0;i<myArr.length;i++){%>
+                <tr>
+                    <td><%= myArr[i][0]%></td>
+                    <td><%= myArr[i][1]%></td>
+                    <td><%= myArr[i][2]%></td>
+                    <td><%= myArr[i][3]%></td>
+                </tr>
+                <% } %> 
+                <% } %> 
+            </tbody>
+        </table>
+   

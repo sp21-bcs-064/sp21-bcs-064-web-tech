@@ -54,6 +54,39 @@ app.get('/contact-us', function (req, res, next) {
   // next();
 });
 
+app.get('/calculator', function (req, res) {
+  var myArr = [[]];
+  res.render('calculator', { myArr });
+});
+
+app.post('/calculator', function (req, res) {
+  console.log('in');
+  op1 = parseFloat(req.body.op1);
+  op2 = parseFloat(req.body.op2);
+  op = req.body.op;
+  result = 0;
+  if (op == 'option1') {
+    op = '+';
+    result = op1 + op2;
+  } else if (op == 'option2') {
+    op = '-';
+    result = op1 - op2;
+  } else if (op == 'option3') {
+    op = 'x';
+    result = op1 * op2;
+  } else if (op == 'option4') {
+    op = '/';
+    result = op1 / op2;
+  }
+
+  if (req.session.calcArray) {
+    req.session.calcArray.push([op1, op, op2, result]);
+  } else {
+    req.session.calcArray = [[op1, op, op2, result]];
+  }
+  myArr = req.session.calcArray;
+  return res.render('calculator', { myArr });
+});
 app.get('/views', (req, res) => {
   let visits = req.cookies.visits;
 
