@@ -8,7 +8,7 @@ module.exports = async function (req, res, next) {
   console.log(user);
   // // end default login
   // // comment above code in deployment
-  if (!req.session.user) return res.redirect('/login');
+  if (!req.session.user) return res.render('auth/login');
   else {
     req.user = req.session.user;
     next();

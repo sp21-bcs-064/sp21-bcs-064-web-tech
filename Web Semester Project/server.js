@@ -1,6 +1,8 @@
 //require express module
 //npm i express
 
+require('dotenv').config();
+
 // run this command once
 //npm i nodemon -g
 let express = require('express');
@@ -120,7 +122,7 @@ app.get('/', async function (req, res) {
 const mongoose = require('mongoose');
 const { cookie } = require('express/lib/response');
 mongoose
-  .connect('mongodb://localhost/Menu', { useNewUrlParser: true })
+  .connect(process.env.MONGO_DB_URL, { useNewUrlParser: true })
   .then(() => console.log('Connected to Mongo....'))
   .catch((error) => console.log(error.message));
 app.listen(5000, function () {

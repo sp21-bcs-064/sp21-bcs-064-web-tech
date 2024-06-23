@@ -16,7 +16,7 @@ router.get('/register', async (req, res) => {
 });
 router.get('/login', (req, res) => {
   //   return res.send(req.query);
-  // req.session.flash = { type: "success", message: "whoala" };
+  //req.session.flash = { type: 'success', message: 'whoala' };
   res.render('auth/login');
 });
 router.get('/logout', (req, res) => {

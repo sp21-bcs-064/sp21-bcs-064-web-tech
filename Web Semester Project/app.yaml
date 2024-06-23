@@ -1,0 +1,17 @@
+runtime: nodejs20
+# env: flex
+
+# resources:
+#   cpu: 4
+#   memory_gb: 4
+# instance_class: F1
+# automatic_scaling:
+# max_num_instances: 1
+entrypoint: node index.js
+handlers:
+  - url: /.*
+    script: auto
+    secure: always
+env_variables:
+  NODE_ENV: production
+  MONGO_DB_URL: 'mongodb+srv://ahmedpro:ahmedpro@ahmedpro.n3nqm92.mongodb.net/JPRestaurant?retryWrites=true&w=majority&appName=AhmedPro'
